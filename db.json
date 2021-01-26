@@ -1,0 +1,42 @@
+{            
+    "title": "Quiz Hunter x Hunter da Alura",
+    "description": "Teste seus conhecimentos sobre o universo de hunter x hunter neste empolgante quiz.",
+    "questions": [
+        {
+            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+            "title": "Como fazer um seletor por id via CSS?",
+            "description": "Essa é pra aquecer",
+            "answer": 2,
+            "alternatives": [
+                ".elemento",
+                "*elemento",
+                "#elemento",
+                "%elemento"
+            ]
+        }
+    ],
+    "external": [],
+    "theme":{
+     "bg": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Hunter-x-Hunter-Featured-Image-1.jpg",
+     "colors": {
+        "primary": "#4CAF50",
+        "secondary": "#FF9800",
+        "mainBg": "#1C1814",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "sucess": "#4CAF50"
+     }
+    },
+    "halloweenTheme":{
+        "bg": "https://pbs.twimg.com/media/DNKGT8aVAAA1sPv?format=jpg&name=medium",
+        "colors": {
+            "primary": "#5e35b1",
+            "secondary": "#ff8a33",
+            "mainBg": "#1C1814",
+            "contrastText": "#FFFFFF",
+            "wrong": "#e53935",
+            "sucess": "#00c853"
+        }
+    },
+    "borderRadius": "4px"
+}
