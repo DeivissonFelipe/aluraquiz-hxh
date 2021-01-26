@@ -8,7 +8,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 
 function quiz() {
     return (
-        <QuizBackground backgroundImage={db.bgHalloween}>
+        <QuizBackground backgroundImage={({theme}) => theme.bg}>
         <QuizContainer>
           <QuizLogo />
           <Widget>
@@ -26,7 +26,7 @@ function quiz() {
           </Widget>
           <Footer />
         </QuizContainer>
-        <GitHubCorner projectURL="#" />
+        <GitHubCorner projectUrl="https://github.com/DeivissonFelipe/aluraquiz-hxh" />
       </QuizBackground>
     )
 }
