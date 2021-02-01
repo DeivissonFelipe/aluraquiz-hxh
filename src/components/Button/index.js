@@ -5,10 +5,10 @@ const Button = styled.button`
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.contrastText};
     border-radius: ${({ theme }) => theme.borderRadius};
-    border: 1px solid ${(props) => props.theme.colors.secondary};
+    border: 0;
 
     width: 100%;
-    padding: 0.5rem;
+    padding: 10px 16px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1;
