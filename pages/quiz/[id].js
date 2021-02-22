@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import QuizScreen from '../../src/screens/Quiz';
 
-export default function teste({ dbExterno }) {
+export default function quizPageDinamica({ dbExterno }) {
   return (
     <ThemeProvider theme={dbExterno.theme}>
       <QuizScreen
@@ -16,7 +16,7 @@ export default function teste({ dbExterno }) {
 export async function getServerSideProps(context) {
   const [projectName, gitHubUser] = context.query.id.split('___');
 
-  try{
+  try {
     const dbExterno = await fetch(`https://${projectName}.${gitHubUser}.vercel.app/api/db`)
       .then((respostaDoServer) => {
         if (respostaDoServer.ok) { return respostaDoServer.json(); }
@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
         dbExterno,
       },
     };
-  }catch(err){
+  } catch (err) {
     throw new Error(err);
-  };
+  }
 }
